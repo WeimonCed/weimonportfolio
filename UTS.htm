@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:'Times New Roman', Times, serif;
+      
+      line-height: 1.6;
+      color: #ffffff;
+      background: #f8f4f4;
+      
+      background-color: #1f1e1e; /* Light gray background */
+      font-family: Arial, sans-serif;
+    
+    }
+
+    header {
+      background-image: url('main.jpg');
+      background-size: 100% 100%;
+      color: rgb(250, 242, 242);
+      padding-bottom: 500px;
+     
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+     
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover
+     {
+    
+      color: #d40000;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background: #00bcd4;
+      color: rgb(36, 35, 35);
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #b80303;
+    }
+
+    section {
+      padding: 60px 20px;
+      background: rgb(0, 0, 0);
+      margin-top: -50px;
+    }
+
+    section:nth-child(even) {
+      background: #000000;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .projects-grid {
+      background-image: url('bg.jpg');
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+      padding: 0 20px;
+    }
+
+    .project-card {
+    
+      padding: 3%;
+      border-radius: 30px;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background: #00bcd4;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0097a7;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    h2 {
+      background-color: #440606; 
+      color: white;             
+      padding: 40px;
+      text-align: center;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #161616;
+      padding: 20px;
+    }
+
+    /* Gallery container */
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+      gap: 16px;
+      padding: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+   
+    .image-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-size: cover; /* Ensures images cover the container without distortion */
+      background-position: center;
+      height: 300px; /* Fixed height for uniformity */
+    }
+
+    
+    .image-item:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .image-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .image-gallery {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+      }
+    }
+    
+    
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#Highlights">Highlights</a></li>
+        <li><a href="#contact">Conclusion</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Hello, I'm Weimon Cedrick D Pineda</h1>
+      <p> Genius | Playboy | Philanthropist</p>
+      <a href="#about" class="btn">Get to know me </a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Who i am.?
+My name i Weimon Cedrick D. Pineda from BSIT  1 - 10, And I am 18 years old. I am a self proclaimed musician and i am very talented in artistry, music and also poetry, I am a very possitive person. I like getting 
+along with people who support me and person who lift us up rather than compete with us, I also love foods and cardio exercises, thus this explained why physique i have to day. I believe that if we follow our dreams and partnered it with faith in god, 
+we can conquere and be a better example to other people. my favorite quote will bw "Big things start in small things, work hard and make it bigger". Also i belive that well - being is one of the most imporatnt factor that will help us inspire other people,
+. My personality is one of the best example of how I believe in myself and a prove of my life being a believer, 
+  
+
+
+</p>
+<div class="image-gallery">
+  <div class="image-item" style="background-image: url('w\ \(2\).jpg');"></div>
+  <div class="image-item" style="background-image: url('e\ \(2\).jpg');"></div>
+  <div class="image-item" style="background-image: url('i\ \(2\).jpg');"></div>
+  <div class="image-item" style="background-image: url('o\ \(2\).jpg');"></div>
+  <div class="image-item" style="background-image: url('m\ \(2\).jpg');"></div>
+  <div class="image-item" style="background-image: url('n.jpg');"></div>
+</div>  
+    
+<p>
+    <h2>    My journey so far</h2>
+    I am currently taking Bachelor of Science Major in Infromaion Technology in Pamantasan ng lungsod ng valenzuela and I am proud that i have the opportunity to study in one of the most popular Pamantasan in Luzon. Currently I am focusing on my studies and 
+    my goals in life, I am graduate at the Malinta Ntional High School SHS with an outstanding award. I am pursuing my passion in Arts and Music despite of program mismatch I encounter. I belive that my journey is just starting but yet i am si far but nit far enough.
+    I am currently under going military program in PLVNROTCU and I am glad to be the part of the community in Pmanatasan ng Lungsod ng Valenzuela. Currently I joined ITLYMPICS BOTB and got the champion ship as well, And I am very hapy that I did my best with the lord with me. 
+  </p>
+  <div class="image-gallery">
+    <div class="image-item" style="background-image: url('j\ \(2\).jpg');"></div>
+    <div class="image-item" style="background-image: url('e\ \(3\).jpg');"></div>
+    <div class="image-item" style="background-image: url('l.jpg');"></div>
+    <div class="image-item" style="background-image: url('e\ \(2\).jpg');"></div>
+    <div class="image-item" style="background-image: url('pt.jfif');"></div>
+    <div class="image-item" style="background-image: url('d\ \(3\).jpg');"></div>
+  </div>  
+  <h2>    How I see Myself</h2>
+  <p>I see muself as a happy and positive person, despite of some difficulties I will always see the ligth in the dark, though i overthink much about myself, I always pray to god that he will guide me through out my career in life
+    because I will lend myself to him.
+  my greatest strenght will be my confidence, though sometimes I doubt in myself, but I will always be ready to pick myself up even though I am scattered into a Million pieces, I will never give up on myself and my journey cause I know many people are counting on me.
+  My weaknesses will be my heart I am a soft hearted person, every little things that hurt me I will take that seriously and it will bare with me for days, though I always try to use the word "Man up" it doesn't work for me, I am very secretive about how I feel towards other people, 
+  I express more on what I feel whenever I am alone.
+  I am glad that I have a lot of people who is counting on me, specially in the times when I needed opinion of other people to understand more about my self.
+  </p>
+  <div class="image-gallery">
+    <div class="image-item" style="background-image: url('t.jpg');"></div>
+    <div class="image-item" style="background-image: url('y.jpg');"></div>
+    <div class="image-item" style="background-image: url('y\ \(2\).jpg');"></div>
+    <div class="image-item" style="background-image: url('r\ \(2\).jpg');"></div>
+    <div class="image-item" style="background-image: url('o\ \(2\).jpg');"></div>
+    <div class="image-item" style="background-image: url('a.jpg');"></div>
+  </div>  
+  <h2>    Platform Choice</h2>
+  <p>I chose this platform caue i want to provemy self that I am capable of learning language and creating a system, website and design it just by learning it, Also since I am an IT student I am practicing myself for our subjects
+    in 2nd year whch includes an HTML/CSS learning thats why for me this is the best choice of platform I picked. I can already improve my skills and slso finish the project that my teacher gave.
+    <div class="image-gallery">
+      <div class="image-item" style="background-image: url('p.jpg');"></div>
+      <div class="image-item" style="background-image: url('u\ \(2\).jpg');"></div>
+      <div class="image-item" style="background-image: url('b.jpg');"></div>
+    </div>
+  </p>
+  
+
+</section>
+
+  <section id="Highlights">
+    <h2>Highlights</h2>
+    <div class="projects-grid">
+      <div class="project-card"
+      background-image: url bg.jpg>
+        <h3>Spiritual Self</h3>
+       
+        <p>I respect eachothrs values, specially there are a lot of people who will find us different too. that's why i think my 
+          spiritual self is an example of an opened dooe for many posivilities
+        </p>
+      </div>
+      <div class="project-card">
+        <h3>Digital Self</h3>
+        <p>I am an IT student therefore I must relate myself in digitalization to be able to adopt many changes not just in digitalizationworlf but in the whole world too
+          .</p>
+      </div>
+      <div class="project-card">
+        <h3>Future self</h3>
+        <p>You will conquer what you want to conquer and obtain anything that you wanted along side with jesus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Conclusion</h2>
+   
+    <p>In making this project I realized many things, About how far of a IT i am. I never expected to see myself working of codes from Time to time. I relfected my life so many times
+      also thanks to this project I be able to know myself more and explore yself and leave to my comfort zone, I also realize that I need to be more aware of my past for beable to improe myself towards the future.
+      This project help me realize that what I needed in my life is not just myelf but other people too, Physical self, Social self, Spiritul self, Digital self and Future self are once that we need to prioritize to be.
+      Having these traits to apply to people will obtain a good connection with your friends and will lift up people around you. Thats why the "self" is the most powerful weapon you have in this world, you can modify it aspect by aspect but you can never change it
+      It can never be erased nor it can never be forgotten. that’swhy we should be a better example to the people around us. as one of the famous philosopher once said "know thyself" explore your self and improve it like there is no tommorow
+   
+   
+   
+   if you have any insights, Please let me know. Goodluck  </p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Weimon Pineda. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
